@@ -13,3 +13,6 @@ A simple jQuery plugin that animates a table row to look like a loading bar by c
     color: color of cell [#1FF]
     interval: milliseconds between frames [100]
 
+## Demo
+
+http://wondergreat.com/demos/jquery-table-animation.html
