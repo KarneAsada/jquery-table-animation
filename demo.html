@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+#wrap { margin:20px; }
+table { width:100%; }
+
+td { 
+	padding: 20px; 
+	border: 1px solid #999; 
+}
+</style>
+</head>
+<body>
+  
+  
+  <div id="wrap">
+  <table>   
+  <tr><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td></tr>
+    
+  <tr id="x"><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td></tr>
+    
+  <tr><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td><td>one</td><td>two</td><td>three</td></tr>
+    
+  </table>    
+
+  <button id="btn">click</button>
+  
+  
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src=""></script>
+<script>
+$("#btn").toggle(
+	function(){
+		$("#x").tableLoadingAnimation("start");
+	},
+	function(){
+		$("#x").tableLoadingAnimation("stop");
+	}
+);
+</script>
+  
+</body>
+</html>
