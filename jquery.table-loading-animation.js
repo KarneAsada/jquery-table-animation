@@ -66,7 +66,6 @@
   // Add new options to the options object
   Plugin.prototype.extendOptions = function( options ) {
     this.options =  $.extend( {}, this._defaults, this.options, options);
-    console.log(this.options);
   };
   
   // Run a command passed in
@@ -122,7 +121,6 @@
   Plugin.prototype.revertColors = function() {
     var self = this;
     $(self.element).find("td").css("background-color", self.originalColor);
-    console.log(self.originalColor);
   };
   
   // Return the correct sibling, depending upon traversal direction
